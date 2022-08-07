@@ -1,0 +1,106 @@
+Frontend:
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbutton"
+        android:layout_below="@id/password"
+        android:text="Login"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotpassword"
+            android:layout_below="@id/loginbutton"
+            android:text="Forgot Password"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/others"
+            android:layout_above="@id/socialicons"
+            android:text="or sign in with"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialicons"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+
+            <ImageView
+               android:layout_width="48dp"
+               android:layout_height="48dp"
+                android:layout_margin="20dp"
+               android:src="@drawable/google"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/facebook"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/instagram"/>
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+  
+  
+  
+  
+  MainActivity.java
+  import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.button.MaterialButton;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        TextView username = findViewById(R.id.username);
+        TextView password = findViewById(R.id.password);
+
+        MaterialButton loginbutton = (MaterialButton) findViewById(R.id.loginbutton);
+
+        loginbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (username.getText().toString().equalsIgnoreCase("admin") && password.getText().toString().equals("Heman007")){
+                //password is correct
+                Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+
+                }
+                else
+
+                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+    }
+}
