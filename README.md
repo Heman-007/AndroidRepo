@@ -1,2 +1,1 @@
-# PGDAC-21
-KOCHI-DAC PROJECT WORK
+Android Studio Programs Repository
