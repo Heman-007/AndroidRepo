@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Droid Cafe</string>
+    <string name="icecream_is_delicious_dessert">Icecream is delicious dessert</string>
+    <string name="donuts_are_glazed_and_sprinkled_with_candy">Donuts are glazed and sprinkled with candy</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_is_premium_self_serve_frozen_yogurt">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="froyo_order_message">You ordered a froyo</string>
+    <string name="signup">SignUp</string>
+    <string name="helpline_number">Helpline number</string>
+    <string name="exit">Exit</string>
+    <string name="notifications">notifications</string>
+    <string name="menu_list">Menu List</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="name">Name</string>
+    <string name="Mobile_no">Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="button">Button</string>
+    <string name="shopping_cart_clicked">shopping</string>
+    <string name="address">Address</string>
+    <string name="enter">Enter</string>
+    <string name="login_sucessfull">Login Sucessfull !</string>
+
+    <string-array name="numbers">
+        <item>Zero</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
+
+
+</resources>
