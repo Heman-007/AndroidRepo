@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="menuinfo">MenuInfo</string>
+    <string name="nav_app">Nav_App</string>
+    <string name="exploremore">Exploremore</string>
+    <string name="automobile_logo">Automobile Logo</string>
+    <string name="navigation_app">Navigation App</string>
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="homeinfo">homeinfo</string>
+    <string name="profile">Profile</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="home1">Home</string>
+    <string name="profile1">Profile</string>
+    <string name="dashboard1">Dashboard</string>
+    <string name="app_name">App Name</string>
+
+</resources>
