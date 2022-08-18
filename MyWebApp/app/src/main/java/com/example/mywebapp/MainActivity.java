@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         TextView username = findViewById(R.id.username);
         TextView password = findViewById(R.id.password);
 
-        MaterialButton loginbutton = findViewById(R.id.loginbutton);
+        MaterialButton loginbutton =  findViewById(R.id.loginbutton);
 
         loginbutton.setOnClickListener(view -> {
             if (username.getText().toString().equalsIgnoreCase("admin") && password.getText().toString().equals("Heman007")){
