@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="apply_text">apply text</string>
+    <string name="save_data">save data</string>
+    <string name="apply_text1">Apply Text</string>
+    <string name="textview_app_layout_constraintend_toendof">textview app:layout_constraintEnd_toEndOf=</string>
+</resources>
