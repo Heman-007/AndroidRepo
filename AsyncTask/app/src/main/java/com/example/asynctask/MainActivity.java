@@ -1,5 +1,6 @@
 package com.example.asynctask;
 
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -10,27 +11,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.lang.ref.WeakReference;
 
+
+
 public class MainActivity extends AppCompatActivity {
     private ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         progressBar = findViewById(R.id.progress_bar);
     }
 
+
+
+
     public void startAsyncTask(View v) {
         ExampleAsyncTask task = new ExampleAsyncTask(this);
-        task.execute(10);
+        task.execute(10);//freezes the background task for secs
     }
 
     private static class ExampleAsyncTask extends AsyncTask<Integer, Integer, String> {
-        private WeakReference<MainActivity> activityWeakReference;
+        private final WeakReference<MainActivity> activityWeakReference;
 
         ExampleAsyncTask(MainActivity activity) {
-            activityWeakReference = new WeakReference<MainActivity>(activity);
+            activityWeakReference = new WeakReference<>(activity);
         }
 
         @Override
@@ -85,4 +93,4 @@ public class MainActivity extends AppCompatActivity {
             activity.progressBar.setVisibility(View.INVISIBLE);
         }
     }
-}
+  }
