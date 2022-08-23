@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Internet Status</string>
+    <string name="internet_app">Internet App!</string>
+    <string name="get_notfied">Get Notfied</string>
+    <string name="get_notifications">Get Notifications</string>
+    <string name="news_app">News App</string>
+    <string name="next">Next</string>
+</resources>
